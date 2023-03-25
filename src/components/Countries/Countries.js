@@ -14,8 +14,8 @@ const Countries = () => {
 
     return (
         <div>
-            <h1>React Rest Countries!!!</h1>
-            <h3>Countries list: {countries.length}</h3>
+            <h1 className='text-primary'>React Rest Countries!!!</h1>
+            <h3 className='fs-2'>Countries list: <span className='text-success'>{countries.length}</span></h3>
            <div className="countries-container">
              {
                 countries.map(country => <Country country={country} key={country.cca3}></Country>)
